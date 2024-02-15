@@ -45,10 +45,10 @@ int OnInit()
    min_rates_total=HiloPeriod;
 
 //--= get indicator handles
-   HighMAHandle = iMA(NULL, 0, HiloPeriod, 0, MODE_SMA, PRICE_HIGH);
+   HighMAHandle = iMA(NULL, 0, HiloPeriod, 1, MODE_SMA, PRICE_HIGH);
    if(HighMAHandle==INVALID_HANDLE)
       Print(" Failed to get handle of the high indicator");
-   LowMAHandle = iMA(NULL, 0, HiloPeriod, 0, MODE_SMA, PRICE_LOW);
+   LowMAHandle = iMA(NULL, 0, HiloPeriod, 1, MODE_SMA, PRICE_LOW);
    if(LowMAHandle==INVALID_HANDLE)
       Print(" Failed to get handle of the low indicator");
 
